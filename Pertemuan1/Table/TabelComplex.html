@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TabelComplex</title>
+    <style>
+        /* CSS untuk tabel */
+    table {
+    width: 30%; /* Lebar tabel 30% dari parent */
+    border-collapse: collapse;
+    border: 2px solid lightblue; /* Menambahkan garis tabel biru */
+    position: absolute; /* Menggunakan position absolute */
+    top: calc(50% - 5cm); /* Pusatkan secara vertikal dengan jarak 10 cm dari atas */
+    left: 50%; /* Pusatkan secara horizontal */
+    transform: translateX(-50%); /* Pusatkan dengan menggeser sejauh 50% dari lebar tabel */
+        }
+        th, td {
+            border: 1px solid lightblue; /* Menambahkan garis sel biru */
+            padding: 8px;
+            text-align: left;
+            font-family: Arial, sans-serif; /* Mengubah font tulisan */
+        }
+    </style> <!-- Menambahkan tanda penutup </style> -->
+</head>
+<body>
+    <!-- Mulai tabel -->
+    <table>
+        <thead>
+            <!-- Baris kepala tabel -->
+            <tr>
+                <!-- Sel kosong -->
+                <th></th>
+                <th>Kolom 1</th>
+                <th>Kolom 2</th>
+            </tr>
+        </thead>
+        <!-- Bagian tubuh tabel -->
+        <tbody>
+            <!-- Baris 1 dalam tubuh tabel -->
+            <tr>
+                <th>Baris 1</th>
+                <td>Baris 1, Kolom 1</td>
+                <td>Baris 1, Kolom 2</td>
+            </tr>
+            <!-- Baris 2 dalam tubuh tabel -->
+            <tr>
+                <th>Baris 2</th>
+                <td>Baris 2, Kolom 1</td>
+                <td>Baris 2, Kolom 2</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

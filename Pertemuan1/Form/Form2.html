@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Pengaturan karakter dan tampilan viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Judul halaman -->
+    <title>Document Form</title>
+    <!-- CSS langsung di dalam head -->
+    <style>
+        /* CSS untuk tabel */
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 30%; /* Lebar tabel 50% dari parent */
+            background-color: lightblue; /* Warna latar belakang tabel */
+            margin: 0 auto; /* Meletakkan tabel di tengah layar */
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 5px;
+            font-family: Arial, sans-serif; /* Mengubah font tulisan */
+        }
+
+        /* CSS untuk tombol */
+        input[type="button"]:hover {
+            background-color: green; /* Warna latar belakang hijau saat kursor mendekati tombol */
+        }
+
+        /* CSS untuk input teks dan kata sandi */
+        input[type="text"],
+        input[type="password"] {
+            margin-top: 5px; /* Menambahkan jarak atas */
+            margin-bottom: 10px; /* Menambahkan jarak bawah */
+        }
+    </style>
+    </style>
+</head>
+<body>
+    <!-- Mulai tabel -->
+    <table>
+        <!-- Baris 1: Input teks -->
+        <tr>
+            <td>Text:</td>
+            <td style="padding: 1px;"> <input type="text"> </td>
+        </tr>
+        <!-- Baris 2: Input sandi -->
+        <tr>
+            <td>Password:</td>
+            <td style="padding: 1px;"> <input type="password"> </td>
+        </tr>
+        <!-- Baris 3: Radio buttons -->
+        <tr>
+            <th colspan="2"> Radio 1<input type="radio" name="radio"> Radio 2<input type="radio" name="radio"></th>
+        </tr>
+        <!-- Baris 4: Checkbox buttons -->
+        <tr>
+            <th colspan="2"> Checkbox 1<input type="checkbox" name="check1"> Checkbox 2<input type="checkbox" name="check2"></th>
+        </tr>
+        <!-- Baris 5: Combo box -->
+        <tr>
+            <td>
+                Combo box:
+            </td>
+            <td>
+                <!-- Dropdown dengan pilihan -->
+                <select name="box" id="box">
+                    <option value="Option 1">Option 1</option>
+                    <option value="Option 2">Option 2</option>
+                    <option value="Option 3">Option 3</option>
+                </select>
+            </td>
+        </tr>
+        <!-- Baris 6: Textarea -->
+        <tr>
+            <td>
+                Textarea:
+            </td>
+            <td>
+                <!-- Area teks multi-baris -->
+                <textarea name="textarea" id="" cols="20" rows="3"></textarea>
+            </td>
+        </tr>
+        <!-- Baris 7: Tombol -->
+        <tr>
+            <th colspan="2">
+                <!-- Tombol -->
+                <input type="button" value="Button">
+            </th>
+        </tr>
+    </table>
+</body>
+</html>

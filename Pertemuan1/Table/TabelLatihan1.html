@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document TabelLatihan</title>
+    <style>
+        /* CSS untuk tabel */
+        table {
+            border: 1px solid black;
+            border-collapse: collapse;
+            width: 10%; /* Lebar tabel 50% dari parent */
+            background-color: lightblue; /* Warna latar belakang tabel */
+            margin: 0 auto; /* Meletakkan tabel di tengah layar secara horizontal */
+            position: absolute; /* Menggunakan position absolute */
+            top: 50%; /* Pusatkan secara vertikal ke 50% dari atas */
+            left: 50%; /* Pusatkan secara horizontal ke 50% dari kiri */
+            transform: translate(-50%, -50%); /* Pusatkan dengan menggeser sejauh 50% dari lebar dan tinggi tabel */
+        }
+        th, td {
+            border: 1px solid black; /* Menambahkan garis sel dalam tabel */
+            padding: 8px;
+            text-align: center; /* Pusatkan teks dalam sel */
+        }
+        th {
+            background-color: lightgray; /* Warna latar belakang sel header */
+        }
+    </style>
+</head>
+<body>
+    <!-- Mulai tabel -->
+    <table>
+        <!-- Baris 1 -->
+        <tr>
+            <td>1,1</td>
+            <td>1,2</td>
+            <td>1,3</td>
+            <td>1,4</td>
+        </tr>
+        <!-- Baris 2 -->
+        <tr>
+            <td>2,1</td>
+            <th rowspan="2" colspan="2">?</th>
+            <td>2,4</td>
+        </tr>
+        <!-- Baris 3 -->
+        <tr>
+            <td>3,1</td>
+            <td>3,4</td>
+        </tr>
+        <!-- Baris 4 -->
+        <tr>
+            <td>4,1</td>
+            <td>4,2</td>
+            <td>4,3</td>
+            <td>4,4</td>
+        </tr>
+    </table>
+</body>
+</html>
