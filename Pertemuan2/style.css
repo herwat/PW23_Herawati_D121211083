@@ -1,0 +1,90 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular','Arial','sans-serif';
+    padding: 12px;
+}
+
+.header {
+    background-color: #04aa6d;
+    color: white;
+    padding: 20px; 
+    border-radius: 4px; /* Sudut melengkung pada header */
+    margin-bottom: 20px;
+}
+
+.header h1, .header p {
+    margin: 0; /* Menghapus margin atas dan bawah */
+}
+
+.main-box {
+    display: flex; 
+}
+
+.left-bar {
+    width: 25%; /* lebar .left-bar */
+    margin-right: 18px; /*Margin kanan*/
+}
+
+.button-list {
+    list-style: none;
+    padding: 0;
+}
+
+.button {
+    background-color: #f1f1f1;
+    padding: 8px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    border: 2px solid #f1f1f1;
+    cursor: pointer; /*mengubah tampilan kursor mouse ketika user mengarahkannya ke elemen HTML tertentu*/ 
+}
+
+/* khusus untuk button "Stylesheet 1" */
+.button-selected {
+    color: white;
+    background-color: #04aa6d;
+    font-weight: 500; /*Bold teks*/
+}
+
+.button-unselected:hover {
+    background-color: white;
+    border: 2px solid #f1f1f1;
+}
+
+.center-bar {
+    width: 70%;
+    margin-right: 40px;
+    height: 400px; 
+}
+
+.center-bar p {
+    font-size: 20px; 
+    margin-bottom: 0;
+}
+
+.center-bar p a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none; 
+}
+
+.right-bar {
+    width: 15%; /*lebar bar*/
+    background-color: #32a4e7;
+    padding: 10px;
+    color: white;
+    border-radius: 4px;
+    justify-content: flex-start; /* Mengatur u/ .main-box rata kiri */
+    height: 405px;
+    margin-left: auto;
+    margin-bottom: 10px;
+}
+
+.footer {
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 8px;
+    border: 1px solid #f1f1f1;
+    border-radius: 4px;
+    font-size: 15px;  
+}
